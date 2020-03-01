@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/osa/aos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grayback">
+        <div class="container1">
+            <header>                    
+                <nav id="nav" class="show-desktop">
+                    <ul>
+                        <a href="#contact"><li>Contact</li></a>
+                        <a href="#whoweare"><li>WhoWeAre</li></a>
+                        <a href="#"><li>PhotoMe</li></a>
+                        <a href="#gallery"><li>Gallery</li></a>
+                        <a href="#camera"><li>OurCamera</li></a>
+                    </ul>
+                </nav>
+            </header>            
+            <p class="head"  data-aos="fade-right" data-aos-delay="200">PhotoMe</p>
+            <img src="imges/photo-of-building-on-top-of-rocks-3312671-min.jpg" alt="hero" class="hero" > 
+            <a href="/index.html"> <button class="home">BACK</button></a>
+        </div>
+    </div>
+    <div class="container2" id="camera">
+        <div class="content">
+            <img class="mySlides img1" src="/imges/grayscale-photography-of-person-standing-on-bridge-2740785.jpg" style="width:100%" >
+            <img class="mySlides img1" src="/imges/mountain-covered-with-snow-3286581-min.jpg" style="width:100%">
+            <img class="mySlides img1" src="/imges/person-holding-black-twin-lens-reflex-camera-1005332.jpg" style="width:100%">
+        </div>
+        <p class="p1"  data-aos="fade-in" data-aos-delay="100">Julia & Greg</p>
+        <p class="p2"  data-aos="fade-in" data-aos-delay="200">random people names..</p>
+            <img src="/imges/grayscale-photography-of-trees-1529881-min.jpg" alt="gray" class="img2">
+            <img src="/imges/photo-of-building-on-top-of-rock-3312663-min.jpg" alt="up" class="img3">
+        </div>
+    <div class="container3"  data-aos="fade-in" data-aos-delay="200">
+        <div class="textbox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, sequi reprehenderit. Laborum explicabo nostrum voluptatem adipisci necessitatibus distinctio ipsum aliquam quibusdam quas optio officiis harum similique, fugiat consequatur qui placeat! Consectetur quis dicta obcaecati adipisci possimus  adipisicing elit. Eveniet, et!</p>
+        </div>
+    </div>
+    <div class="containerwhite" id="gallery"  data-aos="fade-in" data-aos-delay="100"> 
+        <h1>Gallery</h1>
+        <div class="imges"  data-aos="fade-in" data-aos-delay="200">
+            <img src="/imges/an-open-red-flush-door-3303491.jpg" alt="" class="im">
+            <img src="/imges/pen-paper-and-smartphone-257937-min.jpg" alt="" class="im">
+            <img src="/imges/aerial-photography-of-road-near-brown-field-3049327-min.jpg" alt="" class="im">
+            <img src="/imges/photo-of-building-on-top-of-rock-3312663-min.jpg" alt="" class="im">
+            <img src="/imges/brown-canoe-in-the-body-of-water-near-mountain-675764-min.jpg" alt="" class="im"
+                style="width: 40%;">
+            <img src="/imges/grayscale-photography-of-trees-1529881-min.jpg" alt="" class="im" style="width: 40%;">
+        </div>
+    </div>
+    <div class="container4" id="whoweare"  data-aos="fade-in" data-aos-delay="200">
+        <h1 >،، Our Story ,,</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta illo, fugit illum ab cupiditate nisi quas culpa ipsa corrupti voluptatibus!. 
+           <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic perferendis vel impedit, nam rem minus laudantium nihil. Natus, recusandae laborum.
+        </p>
+        <div class="box">
+        <img src="/imges/camera-mountains-outdoors-person-6745.jpg" alt="" class="img5">
+    </div>
+   </div>
+
+   <div class="texthead" id="contact">
+       <h1>Talk to me</h1>
+   </div>
+   <div class="container6" id="contactme">
+    <label for="email" class="textt">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email..">
+
+    <label for="subject" class="textt">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Send" />
+   </div>
+    <script src="/osa/aos.js"></script>
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);
+    }
+            AOS.init();
+
+    </script>
+</body>
+</html>
